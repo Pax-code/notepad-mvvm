@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:paddingTop="15dp"
+                android:paddingStart="10dp"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Recipe"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/content_text"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="food food food food food"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/date_text"
+                android:paddingStart="10dp"
+                android:paddingTop="3dp"
+                android:textSize="12dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:textColor="#6AFFFFFF"
+                android:text="16/07/2023"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
